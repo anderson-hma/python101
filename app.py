@@ -41,9 +41,26 @@
 # print(string[0:16:2])
 # print(creditcardnum[-4:])
 
-# loop
-name = ""
-while name == "":
-    name = input("Enter you name: ")
-    print("You have not entered a name yet.")
-print(f"Hello {name}")
+# # loop while true: --> else break
+# name = ""
+# while name == "":
+#     name = input("Enter you name: ")
+#     print("You have not entered a name yet.")
+# print(f"Hello {name}")
+
+# # for loop continue --> skip that count
+# import time
+# import os
+# def clear(): return os.system('cls')
+
+
+# time_to_count = int(input("Enter the time in seconds: "))
+# for count in reversed(range(1, time_to_count+1)):
+#     print({count})
+#     seconds = count % 60
+#     minutes = int(count/60) % 60
+#     hours = int(count / 3600)
+#     print(f"{hours:02}:{minutes:02}:{seconds:02}")
+#     time.sleep(1)
+#     clear()
+# print("Time's up")
