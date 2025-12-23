@@ -1,27 +1,49 @@
-# Exercise 1 Calculate area of a rectangle
-length = float(input("The length of the Rec: "))
-width = float(input("The width of the Rec: "))
+# # Exercise 1 Calculate area of a rectangle
+# length = float(input("The length of the Rec: "))
+# width = float(input("The width of the Rec: "))
 
-print(f"The result: {length*width}")
+# print(f"The result: {length*width}")
 
-# Exercise 2 Math operation
-operator = input("Today I want to execute(+ - / *): ")
-num1 = float(input("Value for the first num: "))
-num2 = float(input("Value for the second num: "))
+# # Exercise 2 Math operation
+# operator = input("Today I want to execute(+ - / *): ")
+# num1 = float(input("Value for the first num: "))
+# num2 = float(input("Value for the second num: "))
 
-if operator == "+":
-    result = num1+num2
-    print(f"The result of the operation: {result}")
-elif operator == "-":
-    result = num1-num2
-    print(f"The result of the operation: {result}")
-elif operator == "/":
-    result = num1/num2
-    print(f"The result of the operation: {result}")
-elif operator == "*":
-    result = num1*num2
-    print(f"The result of the operation: {result}")
-else:
-    print("Your operator is incorrect")
+# if operator == "+":
+#     result = num1+num2
+#     print(f"The result of the operation: {result}")
+# elif operator == "-":
+#     result = num1-num2
+#     print(f"The result of the operation: {result}")
+# elif operator == "/":
+#     result = num1/num2
+#     print(f"The result of the operation: {result}")
+# elif operator == "*":
+#     result = num1*num2
+#     print(f"The result of the operation: {result}")
+# else:
+#     print("Your operator is incorrect")
+#     result = "Unidentified"
 
-print(f"The result of the operation: {result}")
+# print(f"The result of the operation: {result}")
+
+# # Conditional expression
+# # X if condition else Y
+# num = float(input("Value of the number: "))
+# print("positive" if num > 0 else "negative")
+
+# role = "admin"
+# print("Full access" if role == "admin" else "Limited")
+
+# # indexing with string [start : end : step]
+# string = "Welcome Player 1"
+# creditcardnum = "1234567890"
+# print(string[0:16:2])
+# print(creditcardnum[-4:])
+
+# loop
+name = ""
+while name == "":
+    name = input("Enter you name: ")
+    print("You have not entered a name yet.")
+print(f"Hello {name}")
