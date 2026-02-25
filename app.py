@@ -71,45 +71,65 @@
 # tuple = () ordered, unchangeable, ok with duplicated - fast
 # shopping cart
 
-food_price = {}
+# food_price = {}
 
-while True:
-    food = input("Enter the food name (q to quit): ").strip().lower()
-    if food == "q":
-        break
+# while True:
+#     food = input("Enter the food name (q to quit): ").strip().lower()
+#     if food == "q":
+#         break
 
-    price = input("Enter the price: ").strip()
-    if price == "q":
-        break
-    food_price[food] = float(price)
+#     price = input("Enter the price: ").strip()
+#     if price == "q":
+#         break
+#     food_price[food] = float(price)
 
-for food, price in food_price.items():
-    print(f"{food} costs ${price}")
+# for food, price in food_price.items():
+#     print(f"{food} costs ${price}")
 
-while True:
-    # --- Search by name ---
-    search_by_name = input("Name to search (q to quit): ").strip().lower()
-    if search_by_name == "q":
-        break
-    elif search_by_name != "":
-        price = food_price.get(search_by_name)
-        if price is not None:
-            print(f"{search_by_name} costs {price}")
-        else:
-            print("Not found")
+# while True:
+#     # --- Search by name ---
+#     search_by_name = input("Name to search (q to quit): ").strip().lower()
+#     if search_by_name == "q":
+#         break
+#     elif search_by_name != "":
+#         price = food_price.get(search_by_name)
+#         if price is not None:
+#             print(f"{search_by_name} costs {price}")
+#         else:
+#             print("Not found")
 
-    # --- Search by price ---
-    search_by_price = input("Price to search (q to quit): ").strip()
-    if search_by_price == "q":
-        break
-    elif search_by_price != "":
-        search_by_price = float(search_by_price)
-        found = False
+#     # --- Search by price ---
+#     search_by_price = input("Price to search (q to quit): ").strip()
+#     if search_by_price == "q":
+#         break
+#     elif search_by_price != "":
+#         search_by_price = float(search_by_price)
+#         found = False
 
-        for food, price in food_price.items():
-            if price == search_by_price:
-                print(f"{food} costs {price}")
-                found = True
+#         for food, price in food_price.items():
+#             if price == search_by_price:
+#                 print(f"{food} costs {price}")
+#                 found = True
 
-        if not found:
-            print("Not found")
+#         if not found:
+#             print("Not found")
+
+# function def sth_name (variable_1, variable_2):
+# return function def sth_name (): return
+# positional, default, keyword, arbitrary(save a set of variables into a tuple) argument
+
+# def net_price(list_price, discount=0.5, tax=0):
+#     return list_price * (1-discount) * (1-tax)
+
+# print(net_price(100))
+# print(net_price(50, 0.25))
+
+
+# def add(*args):
+#     total = 0
+#     for arg in args:
+#         total += arg
+#     return total
+
+
+# print(add(1, 3))
